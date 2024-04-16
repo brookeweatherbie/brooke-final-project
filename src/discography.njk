@@ -8,10 +8,10 @@
 <div class="row row-cols-1 row cols-md-2 g-4 row-cols-lg-3">
   {% for discography in queen.discography %}
   <div class="card h-100 text-bg-light border-dark mb-3" style="max-width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="img/{{ discography.image }}" class="card-img-top" alt="Queen album cover">
     <div class="card-body">
-      <h3 class="album-name">...</h3>
-      <p class="album-year">...</p>
+      <h4 class="album-name">{{ discography.title }}</h4>
+      <p class="album-year">{{ discography.year }}</p>
     </div>
   </div>
   {% endfor %}

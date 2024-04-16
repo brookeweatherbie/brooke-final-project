@@ -8,14 +8,14 @@
 
 {% block content %}
   <article class="container">
-    <div class="col-md-4">
+    <div class="row col-sm-6 col-md-4 col-lg-4">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..img/{{ image }}" class="img-fluid mb-4" alt="Color image of the Queen band member">
+            <img src="../img/{{ image }}" class="img-fluid mb-4" alt="Color image of the Queen band member">
           </div>
           <div class="carousel-item">
-            <img src="..img/{{ imagebw }}" class="img-fluid mb-4" alt="Black and white image of the Queen band member">
+            <img src="../img/{{ imagebw }}" class="img-fluid mb-4" alt="Black and white image of the Queen band member">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -28,9 +28,13 @@
         </button>
       </div>
     </div>
-    <div class="col-md-8">
+    <div class="row col-sm-6 col-md-8 col-lg-8">
       <h1>{{ name }}</h1>
-        {{ prose(post) }}
+        <h4>{{ instruments }}</h4>
+        <p class="identifier">Tenure: {{ tenure }}</p>
+        <p class="identifier">Birthplace: {{ birthplace }}</p>
+        <p class="identifier">Birthdate: {{ birthdate }}</p>
+        <p>{{ description | safe }}</p>
     </div>
   </article>
 {% endblock %}
