@@ -1,26 +1,26 @@
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Tour{% endblock %}
-{% block page_description %}Table with the date, city, country and venue of Queen's upcoming performances.{% endblock %}
+{% block page_title %}Billboard{% endblock %}
+{% block page_description %}Table with the song, weeks on chart and top position of Queen's hits.{% endblock %}
 
 {% block content %}
 
 <table class="container table table-striped">
   <thead>
     <tr>
-      <th scope="col">Date</th>
-      <th scope="col">City</th>
-      <th scope="col">Country</th>
-      <th scope="col">Venue</th>
+      <th scope="col">Performer</th>
+      <th scope="col">Song</th>
+      <th scope="col">Weeks on Chart</th>
+      <th scope="col">Top Position</th>
     </tr>
   </thead>
   <tbody>
-    {% for tour in queen.tour %}
+    {% for billboard in queen.billboard %}
     <tr>
-      <th scope="row">{{ tour.date }}</th>
-      <td>{{ tour.city }}</td>
-      <td>{{ tour.country }}</td>
-      <td>{{ tour.venue }}</td>
+      <th scope="row">{{ billboard.Performer }}</th>
+      <td>{{ billboard.Song }}</td>
+      <td>{{ billboard.Weeks on chart }}</td>
+      <td>{{ billboard.Top position }}</td>
     </tr>
     {% endfor %} 
   </tbody>
