@@ -5,15 +5,23 @@
 
 {% block content %}
 
-<section class="container">
+<header class="container rounded my-4 p-5" style="background-color: #e3f2fd;">
   <h1>Meet the Band</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>"Rumor has it that Queen shall soon be crowned 'the new Led Zeppelin,'' which is an event that would certainly suit this observer just fine. There's no doubt that this funky, energetic English quartet has all the tools they'll need to lay claim to the Zep's abdicated heavy-metal throne, and beyond that to become a truly influential force in the rock world. Their debut album is superb... They're the first of a whole new wave of English rockers, and you'd best learn to love 'em now 'cause they're here to stay. Regal bearings aside, Queen is a monster."</p>
+    <p class="byline">- Rolling Stone Magazine</p>
+    <p class="publication">1973</p>
+</header>
 
-  <div class="container col-sm-8 col-md-6 col-lg-3">
+<section>
+  <div class="container">
     {% for members in queen.members %}
-    <img src="img/{{ members.image }}" class="d-block w-100 img-fluid" alt="Color image of the Queen band member">
-      <h4> <a href="members/{{ members.slug }}.html">{{ members.name }}</a></h4>
-        <p>{{ members.instruments }}</p>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="img/{{ members.image }}" class="d-block w-100 img-fluid" alt="Color image of the Queen band member">
+        <h4> <a href="members/{{ members.slug }}.html">{{ members.name }}</a></h4>
+          <p>{{ members.instruments }}</p>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>

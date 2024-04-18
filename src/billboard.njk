@@ -1,29 +1,15 @@
 {% extends '_templates/base.njk' %}
 
 {% block page_title %}Billboard{% endblock %}
-{% block page_description %}Table with the song, weeks on chart and top position of Queen's hits.{% endblock %}
+{% block page_description %}Queen's top hits, by number of weeks on the billboard.{% endblock %}
 
 {% block content %}
 
-<table class="container table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">Performer</th>
-      <th scope="col">Song</th>
-      <th scope="col">Weeks on Chart</th>
-      <th scope="col">Top Position</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for billboard in queen.billboard %}
-    <tr>
-      <th scope="row">{{ billboard.Performer }}</th>
-      <td>{{ billboard.Song }}</td>
-      <td>{{ billboard.Weeks on chart }}</td>
-      <td>{{ billboard.Top position }}</td>
-    </tr>
-    {% endfor %} 
-  </tbody>
-</table>
+<div class="container col-sm-10 col-md-10 col-lg-8">
+  <iframe title="Queen's Top Hits, by Number of Weeks on Billboard" aria-label="Bar Chart" id="datawrapper-chart-wFy7n" src="https://datawrapper.dwcdn.net/wFy7n/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="592" data-external="1">
+  </iframe>
+  <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+  </script>
+</div>
 
 {% endblock %}
