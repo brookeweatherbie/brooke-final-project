@@ -6,6 +6,10 @@
 
 {% block page_description %}{{ headline }}{% endblock %}
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
 {% block content %}
   <article class="container">
     <div class="row col-sm-6 col-md-4 col-lg-4">
@@ -29,7 +33,7 @@
       </div>
     </div>
     <div class="row col-sm-6 col-md-8 col-lg-8">
-      <h1>{{ name }}</h1>
+      <h1 class="rock-salt-regular">{{ name }}</h1>
         <h4>{{ instruments }}</h4>
         <p class="identifier">Tenure: {{ tenure }}</p>
         <p class="identifier">Birthplace: {{ birthplace }}</p>
