@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
 {% block content %}
-  <article class="container">
-    <div class="row col-sm-6 col-md-4 col-lg-4">
+  <div class="container row">
+    <div class="column col-sm-6 col-md-8 col-lg-8">
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -32,7 +32,7 @@
         </button>
       </div>
     </div>
-    <div class="row col-sm-6 col-md-8 col-lg-8">
+    <div class="column col-sm-6 col-md-8 col-lg-8">
       <h1 class="rock-salt-regular">{{ name }}</h1>
         <h4>{{ instruments }}</h4>
         <p class="identifier">Tenure: {{ tenure }}</p>
@@ -40,5 +40,5 @@
         <p class="identifier">Birthdate: {{ birthdate }}</p>
         {{ description | safe }}
     </div>
-  </article>
+  </div>
 {% endblock %}
