@@ -32,7 +32,7 @@ h3 {
 }
 
 .identifier {
-  font-weight: bold;
+  font-style: italic;
 }
 
 .byline {
@@ -49,4 +49,8 @@ footer {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.drop-shadow {
+  text-shadow: 2px 2px 2px black;
 }
