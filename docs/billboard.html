@@ -1,71 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
   <head>
     <title>Billboard</title>
-    <meta name="description" content="Queen's top hits, by number of weeks on the billboard.">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Queen's top hits, by number of weeks on the billboard."
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/q.png" alt="Queen logo" width="45" height="35">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">Members</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="discography.html">Discography</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tour.html">Tour</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="billboard.html">Billboard</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/q.png" alt="Queen logo" width="45" height="35" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="members.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discography.html">Discography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tour.html">Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="billboard.html">Billboard</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div id="jumbo" class="p-5 mb-4 bg-light">
-  <div class="container-fluid py-5 text-center">
-    <h1 class="jumbotron"></h1>
-      <img src="img/queen-logo-white.png" alt="Queen logo">
-  </div>
-</div>
+      <div class="container-fluid py-5 text-center">
+        <h1 class="jumbotron"></h1>
+        <img src="img/queen-logo-white.png" alt="Queen logo" />
+      </div>
+    </div>
 
-
-    
-
-<div class="container col-sm-10 col-md-10 col-lg-8">
-  <iframe title="Queen's Top Hits, by Number of Weeks on Billboard" aria-label="Bar Chart" id="datawrapper-chart-wFy7n" src="https://datawrapper.dwcdn.net/wFy7n/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="592" data-external="1">
-  </iframe>
-  <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-  </script>
-</div>
-
-
+    <div class="container col-sm-10 col-md-10 col-lg-8">
+      <iframe
+        title="Queen's Top Hits, by Number of Weeks on Billboard"
+        aria-label="Bar Chart"
+        id="datawrapper-chart-wFy7n"
+        src="https://datawrapper.dwcdn.net/wFy7n/1/"
+        scrolling="no"
+        frameborder="0"
+        style="width: 0; min-width: 100% !important; border: none"
+        height="592"
+        data-external="1"
+      >
+      </iframe>
+      <script type="text/javascript">
+        !(function () {
+          'use strict';
+          window.addEventListener('message', function (a) {
+            if (void 0 !== a.data['datawrapper-height']) {
+              var e = document.querySelectorAll('iframe');
+              for (var t in a.data['datawrapper-height'])
+                for (var r = 0; r < e.length; r++)
+                  if (e[r].contentWindow === a.source) {
+                    var i = a.data['datawrapper-height'][t] + 'px';
+                    e[r].style.height = i;
+                  }
+            }
+          });
+        })();
+      </script>
+    </div>
 
     <footer>
-  <p id="legal" class="center-block text-center py-3" style="background-color: #e3f2fd;">
-    <small>&copy;</small> <span class="copyright-year"></span>
-    A class project by Brooke Weatherbie.
-  </p>
-</footer>
-
+      <p
+        id="legal"
+        class="center-block text-center py-3"
+        style="background-color: #e3f2fd"
+      >
+        <small>&copy;</small> <span class="copyright-year"></span>
+        A class project by Brooke Weatherbie.
+      </p>
+    </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
