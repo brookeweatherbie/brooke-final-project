@@ -23,8 +23,36 @@
 
 @import "jumbotron";
 
+h1, h2, h4, th {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
 h3 {
+  font-size: 1.75rem;
+  padding-top: 0.5rem;
+}
+
+h4 {
   font-size: 1.5rem;
+}
+
+p, td {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+th {
+  font-size: 1.25rem;
 }
 
 .carousel-item {
@@ -33,6 +61,8 @@ h3 {
 
 .identifier {
   font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .byline {
@@ -45,12 +75,18 @@ footer {
   margin-bottom: 15px;
 }
 
-.rock-salt-regular {
-  font-family: "Rock Salt", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .drop-shadow {
   text-shadow: 2px 2px 2px black;
+}
+
+.city {
+  font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+}
+
+.lead {
+  line-height: 2rem;
 }
